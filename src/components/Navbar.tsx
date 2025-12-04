@@ -54,7 +54,7 @@ export const Navbar = () => {
                   <Label htmlFor="password">Password</Label>
                   <Input id="password" type="password" placeholder="••••••••" />
                 </div>
-                <ThreeDButton className="w-full" size="lg">
+                <ThreeDButton className="w-full" size="sm">
                   Sign In
                 </ThreeDButton>
                 <p className="text-sm text-center text-muted-foreground">
