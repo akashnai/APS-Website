@@ -34,15 +34,15 @@ export const Platform = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="mb-6 text-4xl font-bold tracking-tight text-foreground md:text-5xl">
+            <h2 className="mb-8 text-4xl font-bold tracking-tight text-foreground md:text-5xl">
               One platform, unlimited automations
             </h2>
             
-            <Button className="rounded-full bg-black w-28" >
+            <Button className="mb-8 h-12 w-32 rounded-full bg-black px-6 text-base" >
               Contact Us
             </Button>
 
-            <p className="mb-6 text-lg text-muted-foreground leading-relaxed">
+            <p className="mb-8 text-lg text-muted-foreground leading-relaxed">
               We take the hard work out of building and automating so your team can focus on great ideas and meaningful progress.
             </p>
 
