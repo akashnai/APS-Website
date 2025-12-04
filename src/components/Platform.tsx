@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 export const Platform = () => {
   return (
-    <section className="bg-background py-24 md:py-32">
+    <section className="overflow-hidden bg-background py-24 md:py-32">
       <div className="container mx-auto px-6">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Image */}
