@@ -41,7 +41,7 @@ export const Testimonials = () => {
 
   return (
     <section className="bg-secondary/30 py-24 md:py-32">
-      <div className="container mx-auto px-6 text-center">
+      <div className="container mx-auto px-4 md:px-6 text-center">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -53,7 +53,7 @@ export const Testimonials = () => {
         </motion.h2>
 
         {/* Avatar Row */}
-        <div className="flex justify-center gap-4 mb-10 h-24">
+        <div className="flex justify-center gap-2 md:gap-4 mb-10 h-20 md:h-24 flex-wrap sm:flex-nowrap">
           {reviews.map((review, i) => (
             <motion.div
               key={i}
@@ -62,15 +62,15 @@ export const Testimonials = () => {
                 "cursor-pointer transition-all duration-300",
                 "rounded-xl shadow-md border-2 p-1 bg-background",
                 active === i
-                  ? "scale-125 -translate-y-1 border-primary shadow-xl z-20 rotate-0"
+                  ? "scale-110 md:scale-125 -translate-y-1 border-primary shadow-xl z-20 rotate-0"
                   : "opacity-70 grayscale z-10 hover:opacity-100 hover:grayscale-0 hover:scale-110 hover:z-30 hover:rotate-0 hover:border-primary",
                 active !== i &&
                   (i % 2 === 0
-                    ? "-rotate-6 translate-y-1"
-                    : "rotate-6 translate-y-1")
+                    ? "-rotate-3 md:-rotate-6 translate-y-1"
+                    : "rotate-3 md:rotate-6 translate-y-1")
               )}
             >
-              <Avatar className="w-16 h-16 rounded-xl">
+              <Avatar className="w-12 h-12 md:w-16 md:h-16 rounded-xl">
                 <AvatarImage
                   src={review.img}
                   className="object-cover"
