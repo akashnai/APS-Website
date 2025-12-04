@@ -58,16 +58,16 @@ export const Testimonials = () => {
             <motion.div
               key={i}
               onClick={() => setActive(i)}
-              whileHover={{ scale: 1.1, rotate: 0 }}
               className={cn(
                 "cursor-pointer transition-all duration-300",
                 "rounded-xl shadow-md border-2 p-1 bg-background",
                 active === i
-                  ? "scale-125 -translate-y-1 border-primary shadow-xl z-20"
-                  : "opacity-70 grayscale z-10",
-                i % 2 === 0
-                  ? "-rotate-6 translate-y-1"
-                  : "rotate-6 translate-y-1"
+                  ? "scale-125 -translate-y-1 border-primary shadow-xl z-20 rotate-0"
+                  : "opacity-70 grayscale z-10 hover:opacity-100 hover:grayscale-0 hover:scale-110 hover:z-30 hover:rotate-0 hover:border-primary",
+                active !== i &&
+                  (i % 2 === 0
+                    ? "-rotate-6 translate-y-1"
+                    : "rotate-6 translate-y-1")
               )}
             >
               <Avatar className="w-16 h-16 rounded-xl">

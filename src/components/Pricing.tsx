@@ -64,7 +64,7 @@ export const Pricing = () => {
                  <p className="text-sm text-muted-foreground mb-8">
                    Get a free consultation and a custom quote for your project.
                  </p>
-                  <Button className="rounded-full bg-black w-20"  onClick={() => navigate('/contact')}>
+                  <Button className="rounded-full bg-black w-32"  onClick={() => navigate('/contact')}>
                    Contact Us <ArrowRight className="ml-2 h-4 w-4" />
                  </Button>
               </div>

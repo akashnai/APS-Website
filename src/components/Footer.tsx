@@ -3,6 +3,7 @@ import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 const quickLinks = [
   { label: "Home", href: "#" },
   { label: "Features", href: "#" },
+  { label: "Blog", href: "#" },
   { label: "Pricing", href: "#" },
   { label: "Contact", href: "#" },
 ];

@@ -21,8 +21,9 @@ export const Navbar = () => {
           <h1 className="text-3xl font-bold text-foreground">APS</h1>
           
           <div className="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
-            <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Features</a>
-            <a href="#process" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Process</a>
+            <a href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About</a>
+            <a href="#blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Blog</a>
+            <a href="#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</a>
             <a href="#pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Pricing</a>
           </div>
           

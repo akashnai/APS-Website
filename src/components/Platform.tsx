@@ -38,7 +38,7 @@ export const Platform = () => {
               One platform, unlimited automations
             </h2>
             
-            <Button className="rounded-full bg-black w-20" >
+            <Button className="rounded-full bg-black w-28" >
               Contact Us
             </Button>
 
