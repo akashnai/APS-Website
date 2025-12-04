@@ -24,9 +24,9 @@ export const Footer = () => {
           <div>
             <div className="mb-4 flex items-center gap-2">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-                <span className="text-lg font-bold text-primary-foreground">D</span>
+                <span className="text-lg font-bold text-primary-foreground">A</span>
               </div>
-              <span className="text-xl font-bold">Draftr</span>
+              <span className="text-xl font-bold">APS</span>
             </div>
             <div className="flex gap-4">
               <a href="#" className="transition-colors hover:text-primary">
@@ -85,7 +85,7 @@ export const Footer = () => {
           {/* Copyright */}
           <div className="lg:text-right">
             <p className="text-sm text-background/60">
-              © Draftr 2025
+              © APS 2025
             </p>
           </div>
         </div>

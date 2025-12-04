@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
+import { ThreeDButton } from "@/components/ui/ThreeDButton";
 import { ArrowRight } from "lucide-react";
 
 export const CTA = () => {
@@ -30,10 +30,10 @@ export const CTA = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <Button variant="hero" size="lg" className="group">
+            <ThreeDButton size="lg" className="group">
               Get Started
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </Button>
+            </ThreeDButton>
           </motion.div>
         </motion.div>
       </div>

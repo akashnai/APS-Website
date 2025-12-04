@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { ThreeDButton  } from "./ui/ThreeDButton";
 
 export const Hero = () => {
   return (
@@ -59,10 +60,10 @@ export const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-            <Button variant="hero" size="lg" className="group">
+            <ThreeDButton size="lg" className="group">
               Get Started
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </Button>
+            </ThreeDButton >
           </motion.div>
         </motion.div>
       </div>

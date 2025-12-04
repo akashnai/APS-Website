@@ -4,6 +4,7 @@ import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTr
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { motion } from "framer-motion";
+import { ThreeDButton } from "./ui/ThreeDButton";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +18,7 @@ export const Navbar = () => {
     >
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <h1 className="text-xl font-bold text-foreground">YourBrand</h1>
+          <h1 className="text-3xl font-bold text-foreground">APS</h1>
           
           <div className="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
             <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Features</a>
@@ -27,7 +28,7 @@ export const Navbar = () => {
           
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
-              <Button variant="hero" size="default">
+              <Button className="rounded-full bg-black w-20" variant="default" size="default">
                 Login
               </Button>
             </SheetTrigger>
@@ -52,9 +53,9 @@ export const Navbar = () => {
                   <Label htmlFor="password">Password</Label>
                   <Input id="password" type="password" placeholder="••••••••" />
                 </div>
-                <Button className="w-full" variant="hero" size="lg">
+                <ThreeDButton className="w-full" size="lg">
                   Sign In
-                </Button>
+                </ThreeDButton>
                 <p className="text-sm text-center text-muted-foreground">
                   Don't have an account?{" "}
                   <a href="#" className="text-primary hover:underline">

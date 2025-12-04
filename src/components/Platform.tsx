@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
+import { ThreeDButton } from "@/components/ui/ThreeDButton";
 import platformPreview from "@/assets/platform-preview.jpg";
+import { Button } from "@/components/ui/button";
 
 export const Platform = () => {
   return (
@@ -37,7 +38,7 @@ export const Platform = () => {
               One platform, unlimited automations
             </h2>
             
-            <Button variant="default" size="lg" className="mb-8 rounded-full">
+            <Button className="rounded-full bg-black w-20" >
               Contact Us
             </Button>
 
@@ -47,10 +48,10 @@ export const Platform = () => {
 
             <div className="flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-muted">
-                <span className="text-lg font-semibold text-foreground">JD</span>
+                <span className="text-lg font-semibold text-foreground">VK</span>
               </div>
               <div>
-                <p className="text-sm font-medium text-foreground">James Davidson</p>
+                <p className="text-sm font-medium text-foreground">Vaibhav Khandelwal</p>
                 <p className="text-sm text-muted-foreground">Co-founder</p>
               </div>
             </div>
