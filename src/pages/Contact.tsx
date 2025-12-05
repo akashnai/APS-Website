@@ -160,7 +160,7 @@ const Contact = () => {
                   value={`item-${index}`}
                   className="border-none rounded-2xl bg-[#F3F5F8]/50 px-6 py-2"
                 >
-                  <AccordionTrigger className="hover:no-underline text-base font-medium">
+                  <AccordionTrigger className="hover:no-underline text-base font-medium text-left">
                     {item.question}
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">

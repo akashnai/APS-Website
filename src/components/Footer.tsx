@@ -1,18 +1,20 @@
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const quickLinks = [
-  { label: "Home", href: "#" },
-  { label: "Features", href: "#" },
-  { label: "Blog", href: "#" },
-  { label: "Pricing", href: "#" },
-  { label: "Contact", href: "#" },
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Blog", href: "/blog" },
+  { label: "Automations", href: "/automations" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 const allPages = [
-  { label: "About us", href: "#" },
-  { label: "Features", href: "#" },
+  { label: "About", href: "/about" },
+  { label: "Automations", href: "/automations" },
+  { label: "Blog", href: "/blog" },
   { label: "Waitlist", href: "#" },
-  { label: "Pricing", href: "#" },
+  { label: "Contact Us", href: "/contact" },
   { label: "Privacy Policy", href: "#" },
 ];
 
@@ -53,12 +55,12 @@ export const Footer = () => {
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.label}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="text-background/80 transition-colors hover:text-background"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -72,12 +74,12 @@ export const Footer = () => {
             <ul className="space-y-3">
               {allPages.map((link) => (
                 <li key={link.label}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="text-background/80 transition-colors hover:text-background"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
