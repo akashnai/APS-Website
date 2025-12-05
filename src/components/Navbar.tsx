@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Input } from "@/components/ui/input";
@@ -21,10 +22,10 @@ export const Navbar = () => {
           <h1 className="text-3xl font-bold text-foreground">APS</h1>
           
           <div className="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
-            <a href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About</a>
-            <a href="#blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Blog</a>
-            <a href="#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</a>
-            <a href="#pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Pricing</a>
+            <Link to="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About</Link>
+            <Link to="/blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Blog</Link>
+            <Link to="/automations" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Automations</Link>
+            <Link to="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</Link>
           </div>
           
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
