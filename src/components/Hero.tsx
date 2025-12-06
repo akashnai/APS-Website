@@ -39,7 +39,7 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="mb-6 text-5xl font-bold tracking-tight text-foreground md:text-6xl lg:text-7xl"
+            className="mb-6 text-3xl font-bold tracking-tight text-foreground md:text-4xl lg:text-5xl"
           >
             Buying AI tools won't save your business. Integrating them will
           </motion.h1>

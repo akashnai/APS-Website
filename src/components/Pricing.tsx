@@ -27,7 +27,7 @@ export const Pricing = () => {
             </span>
           </div>
           
-          <h2 className="mb-6 text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl">
+          <h2 className="mb-6 text-2xl font-bold tracking-tight text-foreground md:text-3xl lg:text-4xl">
             Tailored for your unique needs
           </h2>
           
@@ -41,7 +41,7 @@ export const Pricing = () => {
              
             <div className="relative z-10 grid md:grid-cols-2 gap-8 items-center">
               <div className="text-left space-y-6">
-                <h3 className="text-2xl font-semibold text-foreground">What you get</h3>
+                <h3 className="text-xl font-semibold text-foreground">What you get</h3>
                 <ul className="space-y-4">
                   {[
                     "Customized automation workflows",
@@ -60,7 +60,7 @@ export const Pricing = () => {
               </div>
               
               <div className="flex flex-col items-center justify-center text-center p-6 bg-background/40 rounded-2xl border border-white/5 shadow-inner">
-                 <h3 className="text-xl font-semibold text-foreground mb-3">Ready to start?</h3>
+                 <h3 className="text-lg font-semibold text-foreground mb-3">Ready to start?</h3>
                  <p className="text-sm text-muted-foreground mb-8">
                    Get a free consultation and a custom quote for your project.
                  </p>

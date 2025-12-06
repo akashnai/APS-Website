@@ -49,7 +49,7 @@ export const Testimonials = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl text-left"
+            className="text-2xl font-bold tracking-tight text-foreground md:text-3xl lg:text-4xl text-left"
           >
             Loved by designers & teams
           </motion.h2>
@@ -95,7 +95,7 @@ export const Testimonials = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.4 }}
-                className="text-xl md:text-2xl font-medium text-foreground leading-relaxed text-left"
+                className="text-lg md:text-xl font-medium text-foreground leading-relaxed text-left"
               >
                 “{reviews[active].quote}”
               </motion.blockquote>

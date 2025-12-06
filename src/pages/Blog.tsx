@@ -119,7 +119,7 @@ const Blog = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight mb-6 text-foreground">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight mb-6 text-foreground">
               SaaS insights & tips
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-medium">
@@ -153,7 +153,7 @@ const Blog = () => {
                         <div className="text-sm font-medium text-muted-foreground mb-3">
                             {post.date}
                         </div>
-                        <h3 className="text-xl font-bold leading-tight text-foreground group-hover:text-purple-600 transition-colors">
+                        <h3 className="text-lg font-bold leading-tight text-foreground group-hover:text-purple-600 transition-colors">
                             {post.title}
                         </h3>
                    </CardContent>

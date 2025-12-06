@@ -35,7 +35,7 @@ export const Process = () => {
           transition={{ duration: 0.6 }}
           className="mb-16 text-center"
         >
-          <h2 className="mb-4 text-4xl font-bold tracking-tight text-foreground md:text-5xl">
+          <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
             Our Process
           </h2>
         </motion.div>
@@ -51,10 +51,10 @@ export const Process = () => {
             >
               <Card className="h-full bg-card/50 backdrop-blur-sm border-border/50 shadow-card hover:shadow-glow hover:-translate-y-1 transition-all duration-300">
                 <CardContent className="p-8">
-                  <div className="mb-6 text-6xl font-bold text-primary opacity-90">
+                  <div className="mb-6 text-4xl font-bold text-primary opacity-90">
                     {step.number}
                   </div>
-                  <h3 className="mb-4 text-xl font-semibold text-foreground">
+                  <h3 className="mb-4 text-lg font-semibold text-foreground">
                     {step.title}
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">

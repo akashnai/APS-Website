@@ -35,7 +35,7 @@ export const Platform = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="mb-8 text-4xl font-bold tracking-tight text-foreground md:text-5xl">
+            <h2 className="mb-8 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
               One platform, unlimited automations
             </h2>
             

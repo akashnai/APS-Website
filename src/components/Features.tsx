@@ -36,7 +36,7 @@ export const Features = () => {
           transition={{ duration: 0.6 }}
           className="mb-16 text-center"
         >
-          <h2 className="mb-4 text-4xl font-bold tracking-tight text-foreground md:text-5xl">
+          <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
             Built to help your business grow every day
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
@@ -64,7 +64,7 @@ export const Features = () => {
                   </div>
                 </div>
                 <div className="p-8">
-                  <h3 className="mb-3 text-xl font-semibold text-foreground">
+                  <h3 className="mb-3 text-lg font-semibold text-foreground">
                     {feature.title}
                   </h3>
                   <p className="text-muted-foreground">

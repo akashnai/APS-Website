@@ -25,7 +25,7 @@ const About = () => {
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, ease: "easeOut" }}
-                            className="text-5xl md:text-7xl font-bold tracking-tight leading-tight"
+                            className="text-3xl md:text-5xl font-bold tracking-tight leading-tight"
                         >
                             Design isn't just what we <br className="hidden md:block"/>
                             do — it's how we think.
@@ -61,7 +61,7 @@ const About = () => {
                 {/* From Idea to Impact */}
                 <section className="container mx-auto px-6 mb-32 max-w-4xl text-center">
                     <motion.div {...fadeIn}>
-                        <h2 className="text-3xl font-bold mb-8">From Idea to Impact</h2>
+                        <h2 className="text-2xl font-bold mb-8">From Idea to Impact</h2>
                         <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                             <p>
                                 At APS, we're rethinking the way we produce digital products — from brief to deliverables, and finally to impact.
@@ -108,7 +108,7 @@ const About = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.6 }}
                         >
-                            <h2 className="text-4xl font-bold mb-8">Why we exist</h2>
+                            <h2 className="text-3xl font-bold mb-8">Why we exist</h2>
                             <ul className="space-y-6">
                                 {[
                                     "Design is fun and creative but the setup is messy and involves unnecessary complexity.",
@@ -146,7 +146,7 @@ const About = () => {
                                 viewport={{ once: true }}
                                 transition={{ delay: i * 0.1 }}
                             >
-                                <div className="text-5xl md:text-6xl font-bold mb-2">{stat.value}</div>
+                                <div className="text-3xl md:text-4xl font-bold mb-2">{stat.value}</div>
                                 <div className="text-sm md:text-base opacity-70 leading-tight">{stat.label}</div>
                             </motion.div>
                         ))}
@@ -165,7 +165,7 @@ const About = () => {
                 {/* Team Section */}
                 <section className="container mx-auto px-6 mb-32">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold mb-4">Meet the team</h2>
+                        <h2 className="text-3xl font-bold mb-4">Meet the team</h2>
                         <p className="text-muted-foreground max-w-2xl mx-auto">
                             At APS we're a small but passionate team of designers and product
                             thinkers who believe that great tools create great outcomes.
@@ -209,7 +209,7 @@ const About = () => {
                 {/* Join CTA */}
                  <section className="container mx-auto px-6 mb-32">
                     <div className="bg-secondary/20 rounded-3xl p-12 text-center">
-                        <h2 className="text-3xl font-bold mb-6 max-w-2xl mx-auto">
+                        <h2 className="text-2xl font-bold mb-6 max-w-2xl mx-auto">
                             Join us in building tools that make teamwork faster, clearer, and more connected.
                         </h2>
                          <Button className="rounded-full px-8 py-6 text-lg bg-foreground text-background hover:bg-foreground/90">
@@ -221,7 +221,7 @@ const About = () => {
                  {/* Pre-Footer Hero */}
                 <section className="relative py-24 bg-gradient-to-b from-background to-primary/5 overflow-hidden">
                      <div className="container mx-auto px-6 text-center relative z-10">
-                         <h2 className="text-4xl md:text-6xl font-bold mb-6">
+                         <h2 className="text-2xl md:text-4xl font-bold mb-6">
                             Take your creative workflow <br />
                             to the next level
                          </h2>
