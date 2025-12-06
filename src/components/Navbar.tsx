@@ -36,7 +36,7 @@ export const Navbar = () => {
               <Link 
                 key={link.name} 
                 to={link.path} 
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                className="text-base font-medium text-muted-foreground hover:text-primary transition-all duration-200 hover:scale-105"
               >
                 {link.name}
               </Link>

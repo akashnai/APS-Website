@@ -57,14 +57,14 @@ export const Testimonials = () => {
           {/* Right Side: Content */}
           <div className="flex flex-col items-start space-y-8">
             {/* Avatar Row */}
-            <div className="flex justify-start gap-2 md:gap-4 h-20 md:h-24 flex-wrap sm:flex-nowrap">
+            <div className="flex justify-start items-center gap-2 md:gap-4 flex-wrap sm:flex-nowrap">
               {reviews.map((review, i) => (
                 <motion.div
                   key={i}
                   onClick={() => setActive(i)}
                   className={cn(
                     "cursor-pointer transition-all duration-300",
-                    "rounded-xl shadow-md border-2 p-1 bg-background",
+                    "rounded-xl shadow-md border-2 bg-background",
                     active === i
                       ? "scale-110 md:scale-125 -translate-y-1 border-primary shadow-xl z-20 rotate-0"
                       : "opacity-70 grayscale z-10 hover:opacity-100 hover:grayscale-0 hover:scale-110 hover:z-30 hover:rotate-0 hover:border-primary",
@@ -74,7 +74,7 @@ export const Testimonials = () => {
                         : "rotate-3 md:rotate-6 translate-y-1")
                   )}
                 >
-                  <Avatar className="w-12 h-10 md:w-16 md:h-16 rounded-xl">
+                  <Avatar className="w-10 h-10 md:w-16 md:h-16 rounded-xl">
                     <AvatarImage
                       src={review.img}
                       className="object-cover"
