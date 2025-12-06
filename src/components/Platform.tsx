@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
-import { ThreeDButton } from "@/components/ui/ThreeDButton";
 import platformPreview from "@/assets/platform-preview.jpg";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 export const Platform = () => {
+  const navigate = useNavigate();
   return (
     <section className="overflow-hidden bg-background py-24 md:py-32">
       <div className="container mx-auto px-6">
@@ -38,7 +39,7 @@ export const Platform = () => {
               One platform, unlimited automations
             </h2>
             
-            <Button className="mb-8 h-12 w-32 rounded-full bg-black px-6 text-base" >
+            <Button className="mb-8 h-12 w-32 rounded-full bg-black px-6 text-base"  onClick={() => navigate('/contact')} >
               Contact Us
             </Button>
 
