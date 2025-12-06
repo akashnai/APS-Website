@@ -41,7 +41,7 @@ export const Hero = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="mb-6 text-5xl font-bold tracking-tight text-foreground md:text-6xl lg:text-7xl"
           >
-            Your business deserves an easier way to work
+            Buying AI tools won't save your business. Integrating them will
           </motion.h1>
 
           {/* Subheading */}
@@ -51,7 +51,7 @@ export const Hero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="mb-10 text-lg text-muted-foreground md:text-xl"
           >
-            From simplifying your daily tasks to creating your own AI-powered SaaS, we make every step easier — so you can focus on everything that truly matters.
+            Most businesses are drowning in subscriptions but starving for efficiency. Autopilot Studio engineers the actual pipelines—connecting your data, your apps, and your workflows—so your operations run on logic, not luck.
           </motion.p>
 
           {/* CTA Button */}
@@ -61,7 +61,7 @@ export const Hero = () => {
             transition={{ duration: 0.8, delay: 0.5 }}
           >
             <ThreeDButton size="lg" className="group">
-              Get Started
+              View our systems
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </ThreeDButton >
           </motion.div>

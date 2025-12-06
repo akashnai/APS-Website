@@ -31,7 +31,7 @@ export const CTA = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <ThreeDButton size="lg" className="group">
-              Get Started
+              Try for free
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </ThreeDButton>
           </motion.div>
