@@ -22,7 +22,7 @@ export const CTA = () => {
             Take your business to the next level with our tools
           </h2>
           <p className="mb-10 text-lg text-muted-foreground md:text-xl">
-            By collaborating with Adaptive Studio, you can open doors to endless possibilities.
+            Our tools is not to make you fool
           </p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
