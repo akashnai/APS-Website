@@ -19,7 +19,7 @@ export const CTA = () => {
           className="mx-auto max-w-3xl text-center"
         >
           <h2 className="mb-6 text-2xl font-bold tracking-tight text-foreground md:text-3xl lg:text-4xl">
-            Take your business to the next level
+            Take your business to the next level with our tools
           </h2>
           <p className="mb-10 text-lg text-muted-foreground md:text-xl">
             By collaborating with Adaptive Studio, you can open doors to endless possibilities.
