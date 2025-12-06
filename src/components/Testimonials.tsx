@@ -89,7 +89,7 @@ export const Testimonials = () => {
             </div>
 
             {/* Quote */}
-            <div className="space-y-4">
+            <div className="space-y-4 min-h-[200px]">
               <motion.blockquote
                 key={active} // triggers fade animation on change
                 initial={{ opacity: 0 }}
