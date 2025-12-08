@@ -2,7 +2,10 @@ import { motion } from "framer-motion";
 import { ThreeDButton } from "@/components/ui/ThreeDButton";
 import { ArrowRight } from "lucide-react";
 
+import { useNavigate } from "react-router-dom";
+
 export const CTA = () => {
+  const navigate = useNavigate();
   return (
     <section className="relative overflow-hidden py-24 md:py-32">
       {/* Radial gradient background - darker in center, fades to edges */}
@@ -30,7 +33,11 @@ export const CTA = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <ThreeDButton size="lg" className="group">
+            <ThreeDButton 
+              size="lg" 
+              className="group"
+              onClick={() => navigate("/tools")}
+            >
               Try for free
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </ThreeDButton>
