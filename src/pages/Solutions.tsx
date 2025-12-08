@@ -2,7 +2,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
 
-const Automations = () => {
+const Solutions = () => {
     return (
         <div className="min-h-screen bg-background flex flex-col">
             <Navbar />
@@ -13,7 +13,7 @@ const Automations = () => {
                         animate={{ opacity: 1, y: 0 }}
                         className="text-2xl md:text-4xl font-bold mb-6"
                     >
-                        Our Automations
+                        Our Solutions
                     </motion.h1>
                     <p className="text-xl text-muted-foreground">
                         Explore our library of pre-built automation workflows.
@@ -28,4 +28,4 @@ const Automations = () => {
     );
 };
 
-export default Automations;
+export default Solutions;

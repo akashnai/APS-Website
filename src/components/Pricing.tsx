@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { ThreeDButton } from "@/components/ui/ThreeDButton";
-import { Check, ArrowRight, Sparkles } from "lucide-react";
+import { Check, Sparkles } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -65,7 +64,7 @@ export const Pricing = () => {
                    Get a free consultation and a custom quote for your project.
                  </p>
                   <Button className="rounded-full bg-black w-32"  onClick={() => navigate('/contact')}>
-                   Contact Us <ArrowRight className="ml-2 h-4 w-4" />
+                   Contact Us
                  </Button>
               </div>
             </div>

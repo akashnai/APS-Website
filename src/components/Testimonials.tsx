@@ -42,14 +42,14 @@ export const Testimonials = () => {
   return (
     <section className="bg-secondary/30 py-24 md:py-32">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 items-start md:items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 items-start">
           {/* Left Side: Heading */}
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-2xl font-bold tracking-tight text-foreground md:text-3xl lg:text-4xl text-left"
+            className="text-2xl font-bold tracking-tight text-foreground md:text-3xl lg:text-4xl text-left md:mt-2"
           >
             Loved by designers & teams
           </motion.h2>
@@ -74,7 +74,7 @@ export const Testimonials = () => {
                         : "rotate-3 md:rotate-6 translate-y-1")
                   )}
                 >
-                  <Avatar className="w-10 h-10 md:w-16 md:h-16 rounded-xl">
+                  <Avatar className="w-8 h-8 md:w-12 md:h-12 rounded-xl">
                     <AvatarImage
                       src={review.img}
                       className="object-cover"

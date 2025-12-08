@@ -5,13 +5,13 @@ const quickLinks = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Blog", href: "/blog" },
-  { label: "Automations", href: "/automations" },
+  { label: "Solutions", href: "/solutions" },
   { label: "Contact Us", href: "/contact" },
 ];
 
 const allPages = [
   { label: "About", href: "/about" },
-  { label: "Automations", href: "/automations" },
+  { label: "Solutions", href: "/solutions" },
   { label: "Blog", href: "/blog" },
   { label: "Waitlist", href: "#" },
   { label: "Contact Us", href: "/contact" },
