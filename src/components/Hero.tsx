@@ -2,8 +2,10 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { ThreeDButton  } from "./ui/ThreeDButton";
+import { useNavigate } from "react-router-dom";
 
 export const Hero = () => {
+  const navigate = useNavigate();
   return (
     <section className="relative overflow-hidden min-h-[600px] md:min-h-[700px] flex items-center py-24 md:py-32 pt-32">
       {/* Radial gradient background - darker in center, fades to edges */}
@@ -60,7 +62,11 @@ export const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-            <ThreeDButton size="lg" className="group">
+            <ThreeDButton 
+              size="lg" 
+              className="group"
+              onClick={() => navigate("/solutions")}
+            >
               View our systems
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </ThreeDButton >
