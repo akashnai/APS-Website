@@ -17,7 +17,7 @@ const Index = () => {
       <LogoSection />
       <Features />
       <Process />
-      <Platform />
+      {/* <Platform /> */}
       <Testimonials />
       <Pricing />
       <CTA />
