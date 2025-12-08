@@ -3,6 +3,9 @@ import { Card } from "@/components/ui/card";
 import featureSocial from "@/assets/feature-social.jpg";
 import featureCalling from "@/assets/feature-calling.jpg";
 import featureShopping from "@/assets/feature-shopping.jpg";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const features = [
   {
@@ -44,7 +47,7 @@ export const Features = () => {
           </p>
         </motion.div>
 
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto">
           {features.map((feature, index) => (
             <motion.div
               key={feature.title}
@@ -54,8 +57,8 @@ export const Features = () => {
               transition={{ duration: 0.6, delay: index * 0.2 }}
             >
               <Card className="group overflow-hidden rounded-3xl border-0 bg-gradient-card shadow-card transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-                <div className={`${feature.bgColor} p-8`}>
-                  <div className="aspect-square overflow-hidden rounded-2xl">
+                <div className={`${feature.bgColor} p-6`}>
+                  <div className="aspect-[4/3] overflow-hidden rounded-2xl">
                     <img
                       src={feature.image}
                       alt={feature.title}
@@ -63,11 +66,11 @@ export const Features = () => {
                     />
                   </div>
                 </div>
-                <div className="p-8">
+                <div className="p-6">
                   <h3 className="mb-3 text-lg font-semibold text-foreground">
                     {feature.title}
                   </h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-muted-foreground text-sm">
                     {feature.description}
                   </p>
                 </div>
@@ -75,6 +78,20 @@ export const Features = () => {
             </motion.div>
           ))}
         </div>
+
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="mt-16 text-center"
+        >
+          <Button asChild size="lg" className="rounded-full px-8 h-12 text-base font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105 bg-primary text-primary-foreground">
+            <Link to="/solutions">
+              Explore All Solutions <ArrowRight className="ml-2 w-5 h-5" />
+            </Link>
+          </Button>
+        </motion.div>
       </div>
     </section>
   );

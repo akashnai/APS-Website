@@ -21,10 +21,10 @@ export const Results = () => {
           className="mb-12 md:mb-16 text-center"
         >
           <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl text-center">
-            Turn your operations into your unfair advantage
+            Results (Because You Asked Nicely)
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-muted-foreground text-center">
-            Stop letting manual work slow you down. See what happens when your business runs on autopilot.
+            We know you didn’t ask, but showing off results is kind of our duty.
           </p>
         </motion.div>
 

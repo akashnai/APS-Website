@@ -4,8 +4,10 @@ import { motion } from "framer-motion";
 import { ArrowRight, Twitter, Linkedin, Dribbble } from "lucide-react";
 import { ThreeDButton } from "@/components/ui/ThreeDButton";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
+    const navigate = useNavigate();
     const fadeIn = {
         initial: { opacity: 0, y: 20 },
         whileInView: { opacity: 1, y: 0 },
@@ -226,7 +228,7 @@ const About = () => {
                             to the next level
                          </h2>
                          <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-8">
-                            <ThreeDButton size="lg" className="group">
+                            <ThreeDButton size="lg" onClick={() => navigate("/tools")} className="group">
                                 Try for free
                                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                             </ThreeDButton>
