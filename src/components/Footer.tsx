@@ -6,12 +6,14 @@ const quickLinks = [
   { label: "About", href: "/about" },
   { label: "Blog", href: "/blog" },
   { label: "Solutions", href: "/solutions" },
+  { label: "Tools", href: "/tools" },
   { label: "Contact Us", href: "/contact" },
 ];
 
 const allPages = [
   { label: "About", href: "/about" },
   { label: "Solutions", href: "/solutions" },
+  { label: "Tools", href: "/tools" },
   { label: "Blog", href: "/blog" },
   { label: "Waitlist", href: "#" },
   { label: "Contact Us", href: "/contact" },
