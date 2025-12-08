@@ -10,6 +10,7 @@ import Solutions from "./pages/Solutions";
 import Contact from "./pages/Contact";
 import Tools from "./pages/Tools";
 import NotFound from "./pages/NotFound";
+import CaseStudyDetail from "./pages/CaseStudyDetail";
 import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/solutions" element={< Solutions />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/tools" element={<Tools />} />
+          <Route path="/case-studies/:slug" element={<CaseStudyDetail />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

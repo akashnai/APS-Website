@@ -3,37 +3,11 @@
 import { motion } from "framer-motion";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, TrendingUp, Clock, Users } from "lucide-react";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
+import { caseStudies } from "@/data/caseStudies";
 
-const caseStudies = [
-  {
-    company: "Neon Realty",
-    category: "Real Estate",
-    metric: "300% Increase",
-    metricLabel: "in Booked Appointments",
-    description: "How a boutique agency used AI agents to qualify leads 24/7, turning missed calls into scheduled viewings automatically.",
-    icon: TrendingUp,
-    href: "/case-studies/neon-realty"
-  },
-  {
-    company: "Civic Legal",
-    category: "Legal Operations",
-    metric: "20 Hours/Week",
-    metricLabel: "Saved on Doc Review",
-    description: "Automating the contract intake process allowed their senior partners to focus on strategy instead of administrative triage.",
-    icon: Clock,
-    href: "/case-studies/civic-legal"
-  },
-  {
-    company: "Kinetik Brands",
-    category: "E-Commerce",
-    metric: "$50k Monthly",
-    metricLabel: "Revenue via Auto-Recovery",
-    description: "Implementing an intelligent abandoned cart recovery sequence that engages customers with personalized offers.",
-    icon: Users,
-    href: "/case-studies/kinetik-brands"
-  }
-];
+
 
 export const Results = () => {
   return (
@@ -82,8 +56,10 @@ export const Results = () => {
                   </p>
                 </CardContent>
                 <CardFooter className="pt-0">
-                  <Button variant="ghost" className="p-0 hover:bg-transparent group-hover:text-primary transition-colors flex items-center gap-2">
-                    Read Case Study <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                  <Button variant="ghost" className="p-0 hover:bg-transparent group-hover:text-primary transition-colors flex items-center gap-2" asChild>
+                    <Link to={`/case-studies/${study.slug}`}>
+                      Read Case Study <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                    </Link>
                   </Button>
                 </CardFooter>
               </Card>
