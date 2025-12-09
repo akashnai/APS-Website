@@ -251,6 +251,24 @@ export const caseStudies: CaseStudy[] = [
   },
 
   {
+    id: "3",
+    slug: "fintech-flow",
+    company: "Fintech Flow",
+    category: "Finance",
+    metric: "99.9% Accuracy",
+    metricLabel: "in Transaction Processing",
+    description:
+      "Automating reconciliation processes to eliminate human error and speed up financial reporting.",
+    icon: Database,
+    title: "Automated Financial Reconciliation System",
+    subtitle: "Zero-error accounting with real-time transaction matching.",
+    techStack: ["Python", "SQL", "Tableau", "AWS"],
+    outcomes: [
+      { metric: "Error Rate", outcome: "Reduced from 5% to 0.1%" },
+      { metric: "Speed", outcome: "Processing time cut by 90%" },
+    ],
+  },
+  {
     id: "4",
     slug: "kinetik-brands",
     company: "Kinetik Brands",
@@ -260,5 +278,50 @@ export const caseStudies: CaseStudy[] = [
     description:
       "Implementing an intelligent abandoned cart recovery sequence that engages customers with personalized offers.",
     icon: Users,
+    title: "Abandoned Cart Recovery Engine",
+    subtitle:
+      "Recovering lost revenue with hyper-personalized customer engagement.",
+    techStack: ["Shopify API", "Klaviyo", "OpenAI"],
+    outcomes: [
+      { metric: "Recovery Rate", outcome: "Recovered 15% of abandoned carts" },
+      { metric: "ROI", outcome: "20x ROI in first month" },
+    ],
+  },
+  {
+    id: "5",
+    slug: "legal-eagle",
+    company: "Legal Eagle Partners",
+    category: "Legal",
+    metric: "15 hrs/week",
+    metricLabel: "Saved per Paralegal",
+    description:
+      "Document automation system that generates contracts and legal briefs in minutes instead of hours.",
+    icon: MessageSquare,
+    title: "Legal Document Synthesis Engine",
+    subtitle: "Drafting complex legal documents with AI-assisted precision.",
+    techStack: ["GPT-4", "DocuSign API", "React"],
+    outcomes: [
+      { metric: "Drafting Time", outcome: "Reduced from 4 hours to 15 mins" },
+      { metric: "Accuracy", outcome: "Standardized clauses across all docs" },
+    ],
+  },
+  {
+    id: "6",
+    slug: "med-tech-innovators",
+    company: "MedTech Innovators",
+    category: "Healthcare",
+    metric: "40% Faster",
+    metricLabel: "Patient Onboarding",
+    description:
+      "Streamlining patient intake forms and insurance verification logic to reduce wait times.",
+    icon: Zap,
+    title: "Smart Patient Intake System",
+    subtitle:
+      "Seamless patient onboarding with automated insurance verification.",
+    techStack: ["Next.js", "Azure Health Bot", "FHIR"],
+    outcomes: [
+      { metric: "Wait Times", outcome: "Reduced by 40%" },
+      { metric: "Compliance", outcome: "100% HIPAA Compliant" },
+    ],
   },
 ];

@@ -1,9 +1,9 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
-import { Features } from "@/components/Features";
+import { Results } from "@/components/Results";
 
-const Solutions = () => {
+const ResultsPage = () => {
     return (
         <div className="min-h-screen bg-background flex flex-col">
             <Navbar />
@@ -14,17 +14,17 @@ const Solutions = () => {
                         animate={{ opacity: 1, y: 0 }}
                         className="text-2xl md:text-4xl font-bold mb-6"
                     >
-                        Our Solutions
+                        Our Results
                     </motion.h1>
                     <p className="text-xl text-muted-foreground">
-                        Explore our library of pre-built automation workflows.
+                        Real impact delivered for our clients.
                     </p>
                 </div>
-                <Features showAll={true} />
+                <Results showAll={true} />
             </main>
             <Footer />
         </div>
     );
 };
 
-export default Solutions;
+export default ResultsPage;
