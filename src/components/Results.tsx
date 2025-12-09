@@ -50,7 +50,7 @@ export const Results = () => {
                     {study.title || study.category}
                   </p>
                   
-                  <h3 className="text-2xl font-bold text-black mb-4 leading-tight min-h-[4rem]">
+                  <h3 className="text-2xl font-bold text-black mb-4 leading-tight">
                     {study.metric}
                   </h3>
 
@@ -69,7 +69,7 @@ export const Results = () => {
                     <p className="text-base font-bold text-black">{study.company}</p>
                     <p className="text-xs text-gray-400 font-medium">Client</p>
                   </div>
-                  <Button className="rounded-full bg-black text-white hover:bg-gray-800 font-medium px-5 h-10 text-sm" asChild>
+                  <Button className="rounded-full bg-black text-white hover:bg-primary font-medium px-5 h-10 text-sm" asChild>
                     <Link to={`/case-studies/${study.slug}`}>
                       Read Case Study
                     </Link>
