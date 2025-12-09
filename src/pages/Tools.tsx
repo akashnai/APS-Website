@@ -40,7 +40,7 @@ const Tools = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-black dark:text-white tracking-tight">
               Premium AI Tools
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -60,15 +60,15 @@ const Tools = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Card className="h-full border-muted/50 bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 overflow-hidden group">
-                  <div className="absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <div className="bg-primary/10 text-primary text-xs font-semibold px-2 py-1 rounded-full">
+                <Card className="h-full border-border/50 bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2 overflow-hidden group relative">
+                  <div className="absolute top-0 right-0 p-4">
+                    <div className="bg-primary/10 text-primary text-xs font-semibold px-2 py-1 rounded-full border border-primary/20">
                       {tool.badge}
                     </div>
                   </div>
                   
                   <CardHeader>
-                    <div className="mb-4 p-3 bg-primary/5 w-fit rounded-xl group-hover:bg-primary/10 transition-colors">
+                    <div className="mb-4 p-3 bg-primary/10 w-fit rounded-2xl group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
                       {tool.icon}
                     </div>
                     <CardTitle className="text-2xl mb-2">{tool.title}</CardTitle>
@@ -78,7 +78,7 @@ const Tools = () => {
                   </CardHeader>
                   
                   <CardContent>
-                    <Button className="w-full group/btn" variant="outline">
+                    <Button className="w-full group/btn group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300" variant="outline">
                       Explore Tool 
                       <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
                     </Button>

@@ -1,7 +1,7 @@
 
 
 import { motion } from "framer-motion";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
@@ -28,8 +28,8 @@ export const Results = () => {
           </p>
         </motion.div>
 
-        <div className="grid gap-8 md:grid-cols-3">
-          {caseStudies.map((study, index) => (
+        <div className="grid gap-6 md:grid-cols-3">
+          {caseStudies.slice(0, 3).map((study, index) => (
             <motion.div
               key={study.company}
               initial={{ opacity: 0, y: 30 }}
@@ -37,31 +37,44 @@ export const Results = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
             >
-              <Card className="flex flex-col h-full overflow-hidden border-2 hover:border-primary/50 transition-all duration-300 hover:shadow-xl group bg-secondary/10">
-                <CardHeader className="pb-4">
-                  <div className="flex justify-between items-start mb-2">
-                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary/10 text-primary hover:bg-primary/20">
+              <Card className="flex flex-col h-full bg-white rounded-[2rem] border border-gray-100 p-8 shadow-sm hover:shadow-xl transition-all duration-300">
+                <div className="flex justify-between items-start mb-6">
+                  <div className="flex items-center justify-center">
+                    <study.icon className="w-8 h-8 text-black stroke-[1.5]" />
+                  </div>
+
+                </div>
+
+                <div className="flex-grow mb-8">
+                  <p className="text-sm font-bold text-black mb-2">
+                    {study.title || study.category}
+                  </p>
+                  
+                  <h3 className="text-2xl font-bold text-black mb-4 leading-tight min-h-[4rem]">
+                    {study.metric}
+                  </h3>
+
+                  <div className="flex flex-wrap gap-2">
+                    <span className="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-600">
                       {study.category}
                     </span>
-                    <study.icon className="w-5 h-5 text-muted-foreground" />
+                    <span className="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-600">
+                      Senior Level
+                    </span>
                   </div>
-                  <CardTitle className="text-xl md:text-2xl font-bold">
-                    {study.metric} <br />
-                    <span className="text-lg font-medium text-muted-foreground">{study.metricLabel}</span>
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <p className="text-muted-foreground leading-relaxed">
-                    {study.description}
-                  </p>
-                </CardContent>
-                <CardFooter className="pt-0">
-                  <Button variant="ghost" className="p-0 hover:bg-transparent group-hover:text-primary transition-colors flex items-center gap-2" asChild>
+                </div>
+
+                <div className="flex items-end justify-between border-t border-gray-50 pt-6">
+                  <div>
+                    <p className="text-base font-bold text-black">{study.company}</p>
+                    <p className="text-xs text-gray-400 font-medium">Client</p>
+                  </div>
+                  <Button className="rounded-full bg-black text-white hover:bg-gray-800 font-medium px-5 h-10 text-sm" asChild>
                     <Link to={`/case-studies/${study.slug}`}>
-                      Read Case Study <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                      Read Case Study
                     </Link>
                   </Button>
-                </CardFooter>
+                </div>
               </Card>
             </motion.div>
           ))}
