@@ -53,7 +53,7 @@ const Contact = () => {
               Get in touch with us
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Have questions, need help, or want to discover more about APS? We're here to support you every step of the way.
+              Have questions, need help, or want to get started? We're here to support you every step of the way.
             </p>
           </motion.div>
 
@@ -86,7 +86,7 @@ const Contact = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label htmlFor="company" className="text-sm font-medium ml-1">Company*</label>
+                  <label htmlFor="company" className="text-sm font-medium ml-1">Name*</label>
                   <Input 
                     id="company" 
                     placeholder="Company here" 
@@ -104,7 +104,7 @@ const Contact = () => {
               </div>
 
               <div className="space-y-2">
-                <label htmlFor="message" className="text-sm font-medium ml-1">Message*</label>
+                <label htmlFor="message" className="text-sm font-medium ml-1">Message</label>
                 <Textarea 
                   id="message" 
                   placeholder="Enter message" 
@@ -129,7 +129,7 @@ const Contact = () => {
             <div className="space-y-2">
               <h3 className="font-bold text-lg">Support</h3>
               <a href="mailto:support@aps.com" className="text-sm font-medium underline decoration-1 underline-offset-4 hover:text-primary transition-colors block mb-2">
-                support@aps.com
+                support@autopilot-studio.com
               </a>
               <p className="text-sm text-muted-foreground leading-relaxed">
                 Need help? Our team's here 24/7 to assist you.
@@ -138,7 +138,7 @@ const Contact = () => {
             <div className="space-y-2">
               <h3 className="font-bold text-lg">Sales</h3>
               <a href="mailto:sales@aps.com" className="text-sm font-medium underline decoration-1 underline-offset-4 hover:text-primary transition-colors block mb-2">
-                sales@aps.com
+                contact@autopilot-studio.com
               </a>
               <p className="text-sm text-muted-foreground leading-relaxed">
                 Interested in APS for your team? Let's talk pricing and solutions.

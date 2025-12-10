@@ -29,8 +29,7 @@ const About = () => {
                             transition={{ duration: 0.8, ease: "easeOut" }}
                             className="text-3xl md:text-5xl font-bold tracking-tight leading-tight"
                         >
-                            Design isn't just what we <br className="hidden md:block"/>
-                            do — it's how we think.
+                            Meet the humans behind the workflows
                         </motion.h1>
                         <motion.p 
                             initial={{ opacity: 0, y: 20 }}
@@ -38,14 +37,15 @@ const About = () => {
                             transition={{ duration: 0.8, delay: 0.2 }}
                             className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto"
                         >
-                            At APS, we're rebuilding the next generation of design tools — simple, automated, and unifying. 
+                            We build smart automations, but it’s our human
+ 
                             <span className="block mt-1 text-sm text-muted-foreground/80 font-medium tracking-wide uppercase">
-                                FAST, SEAMLESS, AND EMPOWERING FOR EVERYONE.
+                                creativity that makes the Ai brilliant
                             </span>
                         </motion.p>
                     </div>
 
-                    <motion.div 
+                    {/* <motion.div 
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 1, delay: 0.3 }}
@@ -57,11 +57,11 @@ const About = () => {
                             className="w-full h-full object-cover"
                         />
                          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                    </motion.div>
+                    </motion.div> */}
                 </section>
 
                 {/* From Idea to Impact */}
-                <section className="container mx-auto px-6 mb-32 max-w-4xl text-center">
+                {/* <section className="container mx-auto px-6 mb-32 max-w-4xl text-center">
                     <motion.div {...fadeIn}>
                         <h2 className="text-2xl font-bold mb-8">From Idea to Impact</h2>
                         <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
@@ -80,6 +80,75 @@ const About = () => {
                             </p>
                         </div>
                     </motion.div>
+                </section> */}
+
+                 {/* Team Section */}
+                <section className="container mx-auto px-6 mb-32">
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl font-bold mb-4">Meet the team</h2>
+                        <p className="text-muted-foreground max-w-2xl mx-auto">
+                            At APS we're a small but passionate team of designers and product
+                            thinkers who believe that great tools create great outcomes.
+                        </p>
+                    </div>
+
+                    <div className="grid md:grid-cols-4 gap-8">
+                        {[
+                            { name: "Madhav Agarwal", role: "Founder", img: "/team-1.png" },
+                            { name: "Vaibhav Khandelwal", role: "Co-Founder", img: "/team-2.png" },
+                            { name: "Akshit Kumawat", role: "Social media/marketing head", img: "/team-3.png" },
+                            { name: "Manas", role: "Head developer", img: "/team-4.png" }
+                        ].map((member, i) => (
+                            <motion.div 
+                                key={i}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: i * 0.1 }}
+                                className="group"
+                            >
+                                <div className="aspect-[4/5] overflow-hidden rounded-2xl bg-secondary mb-4">
+                                    <img 
+                                        src={member.img} 
+                                        alt={member.name} 
+                                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                    />
+                                </div>
+                                <h3 className="font-bold text-lg">{member.name}</h3>
+                                <p className="text-sm text-muted-foreground mb-3">{member.role}</p>
+                                <div className="flex gap-3 text-muted-foreground">
+                                    <Twitter className="w-4 h-4 cursor-pointer hover:text-foreground transition-colors" />
+                                    <Dribbble className="w-4 h-4 cursor-pointer hover:text-foreground transition-colors" />
+                                    <Linkedin className="w-4 h-4 cursor-pointer hover:text-foreground transition-colors" />
+                                </div>
+                            </motion.div>
+                        ))}
+                    </div>
+                </section>
+
+                
+
+                {/* Stats Section */}
+                <section className="bg-foreground text-background py-24 mb-32 rounded-3xl container mx-auto">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-12 px-8 md:px-16">
+                        {[
+                            { label: "Customer satisfaction score", value: "98%" },
+                            { label: "Faster output in brand dev", value: "12x" },
+                            { label: "Projects delivered via APS", value: "60+" },
+                            { label: "Talented individuals in APS we care", value: "85%" }
+                        ].map((stat, i) => (
+                            <motion.div 
+                                key={i}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: i * 0.1 }}
+                            >
+                                <div className="text-3xl md:text-4xl font-bold mb-2">{stat.value}</div>
+                                <div className="text-sm md:text-base opacity-70 leading-tight">{stat.label}</div>
+                            </motion.div>
+                        ))}
+                    </div>
                 </section>
 
                 {/* Why We Exist */}
@@ -113,12 +182,11 @@ const About = () => {
                             <h2 className="text-3xl font-bold mb-8">Why we exist</h2>
                             <ul className="space-y-6">
                                 {[
-                                    "Design is fun and creative but the setup is messy and involves unnecessary complexity.",
-                                    "Collaboration is fragmented. We want to mend the broken links between teams.",
-                                    "Syncing data from thoughts to tools shouldn't be confusing or costly.",
-                                    "Future solution is adaptable. We're not just a tool.",
+                                    "Because people deserve more time, less repetitive tasks",
+                                    "Delivering impact by transforming ideas into real‑world results",
+                                    "Syncing data from thoughts to workflows shouldn't be confusing or costly.",
+                                    "Making technology simple, human‑friendly, and powerful",
                                     "Creativity thrives on constraints, but not when constraints stifle scaling.",
-                                    "Too late to rework for pixels in the other way around. We design with empathy and clarity."
                                 ].map((item, i) => (
                                     <li key={i} className="flex gap-4 items-start">
                                         <div className="mt-1 min-w-5">
@@ -132,29 +200,6 @@ const About = () => {
                     </div>
                 </section>
 
-                {/* Stats Section */}
-                <section className="bg-foreground text-background py-24 mb-32 rounded-3xl container mx-auto">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-12 px-8 md:px-16">
-                        {[
-                            { label: "Customer satisfaction score", value: "98%" },
-                            { label: "Faster output in brand dev", value: "12x" },
-                            { label: "Projects delivered via APS", value: "60+" },
-                            { label: "Talented individuals in APS we care", value: "85%" }
-                        ].map((stat, i) => (
-                            <motion.div 
-                                key={i}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: i * 0.1 }}
-                            >
-                                <div className="text-3xl md:text-4xl font-bold mb-2">{stat.value}</div>
-                                <div className="text-sm md:text-base opacity-70 leading-tight">{stat.label}</div>
-                            </motion.div>
-                        ))}
-                    </div>
-                </section>
-
                 {/* Logos */}
                 <section className="container mx-auto px-6 mb-32">
                     <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
@@ -164,49 +209,7 @@ const About = () => {
                     </div>
                 </section>
 
-                {/* Team Section */}
-                <section className="container mx-auto px-6 mb-32">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl font-bold mb-4">Meet the team</h2>
-                        <p className="text-muted-foreground max-w-2xl mx-auto">
-                            At APS we're a small but passionate team of designers and product
-                            thinkers who believe that great tools create great outcomes.
-                        </p>
-                    </div>
-
-                    <div className="grid md:grid-cols-4 gap-8">
-                        {[
-                            { name: "James Lin", role: "Co-Founder", img: "/team-1.png" },
-                            { name: "Sofia Mendes", role: "Design Lead", img: "/team-2.png" },
-                            { name: "Liam Chen", role: "Head of Growth", img: "/team-3.png" },
-                            { name: "Oliver Ross", role: "Lead Engineer", img: "/team-4.png" }
-                        ].map((member, i) => (
-                            <motion.div 
-                                key={i}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: i * 0.1 }}
-                                className="group"
-                            >
-                                <div className="aspect-[4/5] overflow-hidden rounded-2xl bg-secondary mb-4">
-                                    <img 
-                                        src={member.img} 
-                                        alt={member.name} 
-                                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                                    />
-                                </div>
-                                <h3 className="font-bold text-lg">{member.name}</h3>
-                                <p className="text-sm text-muted-foreground mb-3">{member.role}</p>
-                                <div className="flex gap-3 text-muted-foreground">
-                                    <Twitter className="w-4 h-4 cursor-pointer hover:text-foreground transition-colors" />
-                                    <Dribbble className="w-4 h-4 cursor-pointer hover:text-foreground transition-colors" />
-                                    <Linkedin className="w-4 h-4 cursor-pointer hover:text-foreground transition-colors" />
-                                </div>
-                            </motion.div>
-                        ))}
-                    </div>
-                </section>
+               
                 
                 {/* Join CTA */}
                  <section className="container mx-auto px-6 mb-32">

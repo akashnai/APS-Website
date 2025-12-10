@@ -67,9 +67,6 @@ export const Results = ({ showAll = false }: ResultsProps) => {
                     <span className="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-600">
                       {study.category}
                     </span>
-                    <span className="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-600">
-                      Senior Level
-                    </span>
                   </div>
                 </div>
 

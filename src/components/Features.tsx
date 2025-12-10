@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Card } from "@/components/ui/card";
-import featureSocial from "@/assets/feature-social.jpg";
-import featureCalling from "@/assets/feature-calling.jpg";
-import featureShopping from "@/assets/feature-shopping.jpg";
+import featureAiInfluencer from "@/assets/feature-ai-influencer.png";
+import featureVoipCalling from "@/assets/feature-voip-calling.png";
+import featureLeadScrapping from "@/assets/feature-lead-scrapping.png";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles, Zap, Wrench } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -16,7 +16,7 @@ const features = [
   {
     title: "AI Social Media Influencer",
     description: "Let AI craft engaging and on-brand social media content that resonates with your audience, saving you time and boosting results.",
-    image: featureSocial,
+    image: featureAiInfluencer,
     bgColor: "bg-purple-50",
     details: {
       version: "Version 2.4.0",
@@ -48,7 +48,7 @@ const features = [
   {
     title: "VoIP Calling",
     description: "Easily set up VoIP calling systems to make and receive calls online, ideal for remote and global communication.",
-    image: featureCalling,
+    image: featureVoipCalling,
     bgColor: "bg-orange-50",
     details: {
       version: "Version 1.8.2",
@@ -78,9 +78,9 @@ const features = [
     }
   },
   {
-    title: "Local Shopping Automation",
-    description: "Automate in-store tasks like stock alerts and loyalty perks to help you run a smoother, smarter shop.",
-    image: featureShopping,
+    title: "Lead Scrapping system",
+    description: "Automated Lead scrapping and qualifying system providing you leads to cater every morning",
+    image: featureLeadScrapping,
     bgColor: "bg-blue-50",
     details: {
       version: "Version 3.1.0",
@@ -104,148 +104,6 @@ const features = [
             "Optimized checkout process integration.",
             "Better mobile support for inventory scanning app.",
             "Enhanced reporting for peak shopping hours."
-          ]
-        }
-      ]
-    }
-  },
-  {
-    title: "Smart Scheduling",
-    description: "Automate your appointment bookings and calendar management to ensure you never miss a business opportunity.",
-    image: featureSocial,
-    bgColor: "bg-pink-50",
-    details: {
-      version: "Version 2.0.1",
-      date: "December 10, 2025",
-      sections: [
-        {
-          title: "Updates",
-          icon: Sparkles,
-          color: "text-amber-500",
-          items: [
-            "AI-powered conflict resolution for meetings.",
-            "Automatic timezone detection and conversion.",
-            "Customizable booking pages for teams."
-          ]
-        }
-      ]
-    }
-  },
-  {
-    title: "Customer Analytics",
-    description: "Gain deep insights into customer behavior and trends to make data-driven decisions for your business growth.",
-    image: featureCalling,
-    bgColor: "bg-green-50",
-    details: {
-      version: "Version 4.5.0",
-      date: "December 1, 2025",
-      sections: [
-        {
-          title: "Insights",
-          icon: Sparkles,
-          color: "text-amber-500",
-          items: [
-            "Predictive churn analysis models.",
-            "Customer lifetime value (CLV) visualizations.",
-            "Cohort analysis for marketing campaigns."
-          ]
-        },
-        {
-          title: "Bug Fixes",
-          icon: Wrench,
-          color: "text-emerald-500",
-          items: [
-            "Fixed data export encoding issues.",
-            "Resolved chart rendering bugs on Safari.",
-            "Addressed slow query times for large datasets."
-          ]
-        }
-      ]
-    }
-  },
-  {
-    title: "Inventory Management",
-    description: "Keep track of your stock levels in real-time with automated alerts and seamless integration with your sales channels.",
-    image: featureShopping,
-    bgColor: "bg-yellow-50",
-    details: {
-      version: "Version 1.2.0",
-      date: "November 20, 2025",
-      sections: [
-        {
-          title: "Features",
-          icon: Sparkles,
-          color: "text-amber-500",
-          items: [
-            "Barcode scanning support via mobile app.",
-            "Multi-warehouse stock tracking.",
-            "Supplier performance rating system."
-          ]
-        }
-      ]
-    }
-  },
-  {
-    title: "Email Marketing",
-    description: "Create personalized email campaigns that convert leads into customers with our intelligent automation tools.",
-    image: featureSocial,
-    bgColor: "bg-indigo-50",
-    details: {
-      version: "Version 3.0.5",
-      date: "December 8, 2025",
-      sections: [
-        {
-          title: "New",
-          icon: Sparkles,
-          color: "text-amber-500",
-          items: [
-            "A/B testing for subject lines and content.",
-            "Dynamic content blocks based on user segments.",
-            "AI-written smart replies."
-          ]
-        }
-      ]
-    }
-  },
-  {
-    title: "Live Chat Support",
-    description: "Engage with your website visitors instantly using AI-powered chatbots that provide 24/7 support and assistance.",
-    image: featureCalling,
-    bgColor: "bg-red-50",
-    details: {
-      version: "Version 2.2.0",
-      date: "November 15, 2025",
-      sections: [
-        {
-          title: "AI Enhancements",
-          icon: Sparkles,
-          color: "text-amber-500",
-          items: [
-            "Sentiment analysis for chat escalation.",
-            "Multi-language translation in real-time.",
-            "Knowledge base integration for auto-answers."
-          ]
-        }
-      ]
-    }
-  },
-  {
-    title: "Payment Processing",
-    description: "Securely accept payments from multiple channels with our integrated and fraud-resistant payment solutions.",
-    image: featureShopping,
-    bgColor: "bg-teal-50",
-    details: {
-      version: "Version 1.5.0",
-      date: "December 3, 2025",
-      sections: [
-        {
-          title: "Security",
-          icon: Wrench,
-          color: "text-emerald-500",
-          items: [
-            "Enhanced 3D Secure authentication flow.",
-            "Real-time fraud detection algorithms.",
-            "PCI-DSS compliance reporting tools."
           ]
         }
       ]
