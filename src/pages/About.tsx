@@ -1,7 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
-import { ArrowRight, Twitter, Linkedin, Dribbble } from "lucide-react";
+import { ArrowRight, Twitter, Linkedin, Dribbble, Instagram, Youtube } from "lucide-react";
 import { ThreeDButton } from "@/components/ui/ThreeDButton";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
@@ -94,9 +94,26 @@ const About = () => {
 
                     <div className="grid md:grid-cols-4 gap-8">
                         {[
-                            { name: "Madhav Agarwal", role: "Founder", img: "/team-1.png" },
-                            { name: "Vaibhav Khandelwal", role: "Co-Founder", img: "/team-2.png" },
-                            { name: "Akshit Kumawat", role: "Social media/marketing head", img: "/team-3.png" },
+                            { 
+                                name: "Madhav Agarwal", 
+                                role: "Founder", 
+                                img: "/team-1.png",
+                                socials: {
+                                    linkedin: "https://www.linkedin.com/in/madhav-agarwal-ai/",
+                                    instagram: "https://www.instagram.com/automatewithmadhav/",
+                                    youtube: "https://www.youtube.com/@MadhavTheAiGuy"
+                                }
+                            },
+                            { name: "Vaibhav Khandelwal", role: "Co-Founder", img: "/team-2.png",
+                                socials: {
+                                    linkedin: "https://www.linkedin.com/in/vaibhav-khandelwal-123732217/",
+                                }
+                             },
+                            { name: "Akshit Kumawat", role: "Social media/marketing head", img: "/team-3.png",
+                                socials: {
+                                    linkedin: "https://www.linkedin.com/in/akshit-kumawat-8ab5b922a/",
+                                }
+                            },
                             { name: "Manas", role: "Head developer", img: "/team-4.png" }
                         ].map((member, i) => (
                             <motion.div 
@@ -117,9 +134,29 @@ const About = () => {
                                 <h3 className="font-bold text-lg">{member.name}</h3>
                                 <p className="text-sm text-muted-foreground mb-3">{member.role}</p>
                                 <div className="flex gap-3 text-muted-foreground">
-                                    <Twitter className="w-4 h-4 cursor-pointer hover:text-foreground transition-colors" />
-                                    <Dribbble className="w-4 h-4 cursor-pointer hover:text-foreground transition-colors" />
-                                    <Linkedin className="w-4 h-4 cursor-pointer hover:text-foreground transition-colors" />
+                                    {member.socials ? (
+                                        <>
+                                            {member.socials.linkedin && (
+                                                <a href={member.socials.linkedin} target="_blank" rel="noopener noreferrer">
+                                                    <Linkedin className="w-4 h-4 cursor-pointer hover:text-foreground transition-colors" />
+                                                </a>
+                                            )}
+                                            {member.socials.instagram && (
+                                                <a href={member.socials.instagram} target="_blank" rel="noopener noreferrer">
+                                                    <Instagram className="w-4 h-4 cursor-pointer hover:text-foreground transition-colors" />
+                                                </a>
+                                            )}
+                                            {member.socials.youtube && (
+                                                <a href={member.socials.youtube} target="_blank" rel="noopener noreferrer">
+                                                    <Youtube className="w-4 h-4 cursor-pointer hover:text-foreground transition-colors" />
+                                                </a>
+                                            )}
+                                        </>
+                                    ) : (
+                                        <>
+                                            
+                                        </>
+                                    )}
                                 </div>
                             </motion.div>
                         ))}
