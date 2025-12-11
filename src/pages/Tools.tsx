@@ -11,7 +11,8 @@ const tools = [
     title: "Festiv AI",
     description: "Our AI tool helps local businesses create eye-catching festival creatives for WhatsApp, Instagram, flyers, and more. Just select a festival, add your business name, offer, and logo — and your poster is ready to share.",
     icon: <Bot className="w-10 h-10 text-primary" />,
-    badge: "Best"
+    badge: "Best",
+    link: "https://festivai.autopilot-studio.com"
   },
 ];
 
@@ -66,9 +67,11 @@ const Tools = () => {
                   </CardHeader>
                   
                   <CardContent>
-                    <Button className="w-full group/btn group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300" variant="outline">
-                      Explore Tool 
-                      <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
+                    <Button className="w-full group/btn group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300" variant="outline" asChild>
+                      <a href={tool.link} target="_blank" rel="noopener noreferrer">
+                        Explore Tool 
+                        <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
+                      </a>
                     </Button>
                   </CardContent>
                 </Card>

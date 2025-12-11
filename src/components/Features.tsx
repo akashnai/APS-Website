@@ -18,6 +18,7 @@ const features = [
     description: "Let AI craft engaging and on-brand social media content that resonates with your audience, saving you time and boosting results.",
     image: featureAiInfluencer,
     bgColor: "bg-purple-50",
+    link: "/contact",
     details: {
       version: "Version 2.4.0",
       date: "December 12, 2025",
@@ -50,6 +51,7 @@ const features = [
     description: "Easily set up VoIP calling systems to make and receive calls online, ideal for remote and global communication.",
     image: featureVoipCalling,
     bgColor: "bg-orange-50",
+    link: "/contact",
     details: {
       version: "Version 1.8.2",
       date: "November 28, 2025",
@@ -82,6 +84,7 @@ const features = [
     description: "Automated Lead scrapping and qualifying system providing you leads to cater every morning",
     image: featureLeadScrapping,
     bgColor: "bg-blue-50",
+    link: "/contact",
     details: {
       version: "Version 3.1.0",
       date: "December 5, 2025",
@@ -224,8 +227,10 @@ export const Features = ({ showAll = false }: FeaturesProps) => {
                        <Button onClick={() => setSelectedFeature(null)} variant="outline" className="text-base font-medium">
                          Close
                        </Button>
-                       <Button className="bg-primary text-primary-foreground hover:bg-primary/90 text-base font-medium">
-                         Get Started
+                       <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90 text-base font-medium">
+                         <Link to={selectedFeature.link}>
+                            Get Started
+                         </Link>
                        </Button>
                     </div>
                   </div>
