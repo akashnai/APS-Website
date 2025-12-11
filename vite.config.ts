@@ -13,6 +13,9 @@ export default defineConfig(({ mode }) => ({
       "unschematized-unstormable-aryan.ngrok-free.dev",
     ],
   },
+  build: {
+    outDir: "dist"
+  },
 
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
